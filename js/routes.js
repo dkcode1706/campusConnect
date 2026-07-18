@@ -30,6 +30,11 @@ app.config(function ($routeProvider) {
 
         })
 
+        .when("/register/:eventId", {
+            templateUrl: "partials/register-event.html",
+            controller: "registerController"
+        })
+
         .otherwise({
 
             redirectTo: "/"
